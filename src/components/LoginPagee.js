@@ -11,30 +11,33 @@ const LoginPage = props => {
     };
  
     return (
-       <div class='wrapper'>
+       <div class='main'>
         <div className='main-image'>
             <img src={hcbgImage} alt='sampleimage' />
         </div> 
            
         <div>
             <div className='div-login'>
-                <div className='logo'> 
+               
+           
+        <form className='formSample' onSubmit={addUserHandler}>
+        <div className='logo'> 
                 <img src={logoimage} alt='sampleLogo' />
                 </div>
-           
-        <form onSubmit={addUserHandler}>
-            <div className='field'>
+            <div className='fieldemail'>
             <label for="email">Email</label><br/>
             <input  type="email" name="email"  placeholder="Enter your email" /><br/>
             </div>
-            <div className='field2'>
+            <div className='fieldpwd'>
             <label for="password">Password</label><br/>
             <input type="password" name="password" placeholder="Enter your password" /> <br/>
             </div>
-            <p> Forgot password?
+            <div className='link'>
+            <p > Forgot password?
             <a  href="#">Reset</a></p>
             <br />
-            <div>
+            </div>
+            <div className='button'>
             <button type="submit" >SIGN IN</button>
             </div>
         </form>
