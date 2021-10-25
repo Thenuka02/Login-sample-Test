@@ -14,6 +14,10 @@ const LoginPage = props => {
        <div class='main'>
         <div className='main-image'>
             <img src={hcbgImage} alt='sampleimage' />
+            <div class="bottom-center">Infinite entertainment at your fingertips!</div>
+            <div class="bottom">Want to spend a good time with your loved ones? 
+            Enjoy your time with Zinflix, Watch movies on Mobile, Web, Tablet & TV.</div>
+           
         </div> 
            
         <div>
@@ -38,7 +42,7 @@ const LoginPage = props => {
             <br />
             </div>
             <div className='button'>
-            <button type="submit" >SIGN IN</button>
+            <button>SIGN IN</button>
             </div>
         </form>
         </div>
